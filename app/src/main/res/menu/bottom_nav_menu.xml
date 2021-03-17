@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+   <item android:id="@+id/converterFragment"
+       android:title="@string/exchange"
+       android:icon="@drawable/ic_money"/>
+   <item android:id="@+id/graphFragment"
+      android:title="@string/graph"
+      android:icon="@drawable/ic_chart"/>
+   <item android:id="@+id/webFragment"
+       android:title="@string/web"
+      android:icon="@drawable/ic_page"/>
+   
+
+</menu>
