@@ -35,7 +35,6 @@ class MainActivity: AppCompatActivity() {
         binding.bottomNavigationView.setOnNavigationItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
                 R.id.converterFragment -> {
-        
                     navController.navigate(R.id.converterFragment)
                     binding.popView.background = ContextCompat.getDrawable(this, R.drawable.bg_nav_bar_converter)
                     true
