@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
+import com.rysanek.currencyconverter.data.remote.models.RatesMap
 import com.rysanek.currencyconverter.databinding.FragmentConverterBinding
 import com.rysanek.currencyconverter.utils.showSnackBar
 import com.rysanek.currencyconverter.viewmodels.ExchangeViewModel
@@ -27,15 +28,14 @@ class ConverterFragment: Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentConverterBinding.inflate(layoutInflater)
-        
         binding.btnExchange.setOnClickListener {
             if (binding.etAmount.text.isNullOrEmpty()){
                 showSnackBar("Please input an amount")
             } else {
                 viewModel.convert(
                     binding.etAmount.text.toString(),
-                    binding.spFromCurrency.selectedItem.toString(),
-                    binding.spToCurrency.selectedItem.toString(),
+                    RatesMap.rates[binding.spFromCurrency.selectedItem.toString()]!!,
+                    RatesMap.rates[binding.spToCurrency.selectedItem.toString()]!!,
                 )
             }
         }

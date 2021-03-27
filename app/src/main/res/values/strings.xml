@@ -8,37 +8,38 @@
     <string name="amount">Amount</string>
     
     <string-array name="currency_codes">
-        <item>USD</item>
-        <item>EUR</item>
-        <item>CAD</item>
-        <item>AUD</item>
-        <item>BGN</item>
-        <item>BRL</item>
-        <item>CHF</item>
-        <item>CNY</item>
-        <item>CZK</item>
-        <item>DKK</item>
-        <item>GBP</item>
-        <item>HKD</item>
-        <item>HRK</item>
-        <item>HUF</item>
-        <item>IDR</item>
-        <item>ILS</item>
-        <item>INR</item>
-        <item>ISK</item>
-        <item>JPY</item>
-        <item>KRW</item>
-        <item>MXN</item>
-        <item>MYR</item>
-        <item>NOK</item>
-        <item>NZD</item>
-        <item>PHP</item>
-        <item>PLN</item>
-        <item>RUB</item>
-        <item>RON</item>
-        <item>SEK</item>
-        <item>SGD</item>
-        <item>THB</item>
-        <item>ZAR</item>
+        <item>Australian Dollar</item>
+        <item>Brazilian Real</item>
+        <item>British Pound</item>
+        <item>Bulgarian Lev</item>
+        <item>Canadian Dollar</item>
+        <item>Chinese Yuan</item>
+        <item>Croatian Kuna</item>
+        <item>Czech Koruna</item>
+        <item>Danish Krone</item>
+        <item>Euro</item>
+        <item>Hong Kong Dollar</item>
+        <item>Hungarian Forint</item>
+        <item>Icelandic Krona</item>
+        <item>Indian Rupee</item>
+        <item>Indonesian Rupiah</item>
+        <item>Israeli New Shekel</item>
+        <item>Japanese Yen</item>
+        <item>Korean Won</item>
+        <item>Malaysian Ringgit</item>
+        <item>Mexican Peso</item>
+        <item>New Zealand Dollar</item>
+        <item>Norwegian Krone</item>
+        <item>Philippine Peso</item>
+        <item>Polish Zloty</item>
+        <item>Romanian Leu</item>
+        <item>Russian Rubble</item>
+        <item>Singapore Dollar</item>
+        <item>Swedish Krona</item>
+        <item>Swiss Franc</item>
+        <item>Thai Baht</item>
+        <item>Turkish Lira</item>
+        <item>US Dollar</item>
+        <item>S. African Rand</item>
     </string-array>
 </resources>

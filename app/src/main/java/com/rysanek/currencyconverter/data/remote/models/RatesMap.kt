@@ -1,0 +1,40 @@
+package com.rysanek.currencyconverter.data.remote.models
+
+object RatesMap {
+    
+    val rates = hashMapOf(
+        Pair("Australian Dollar", "AUD"),
+        Pair("Brazilian Real", "BRL"),
+        Pair("British Pound", "GBP"),
+        Pair("Bulgarian Lev", "BGN"),
+        Pair("Canadian Dollar", "CAD"),
+        Pair("Chinese Yuan", "CHF"),
+        Pair("Croatian Kuna", "HRK"),
+        Pair("Czech Koruna", "CZK"),
+        Pair("Danish Krone", "DKK"),
+        Pair("Euro", "EUR"),
+        Pair("Hong Kong Dollar", "HKD"),
+        Pair("Hungarian Forint", "HUF"),
+        Pair("Icelandic Krona", "ISK"),
+        Pair("Indian Rupee", "INR"),
+        Pair("Indonesian Rupiah", "IDR"),
+        Pair("Israeli New Shekel", "ILS"),
+        Pair("Japanese Yen", "ISK"),
+        Pair("Korean Won", "KRW"),
+        Pair("Malaysian Ringgit", "MYR"),
+        Pair("Mexican Peso", "MXN"),
+        Pair("New Zealand Dollar", "NZD"),
+        Pair("Norwegian Krone", "NOK"),
+        Pair("Philippine Peso", "PHP"),
+        Pair("Polish Zloty", "PLN"),
+        Pair("Romanian Leu", "RON"),
+        Pair("Russian Rubble", "RUB"),
+        Pair("Singapore Dollar", "SGD"),
+        Pair("Swedish Krona", "SEK"),
+        Pair("Swiss Franc", "CHF"),
+        Pair("Thai Baht", "THB"),
+        Pair("Turkish Lira", "TRY"),
+        Pair("US Dollar", "USD"),
+        Pair("S. African Rand", "ZAR"),
+    )
+}

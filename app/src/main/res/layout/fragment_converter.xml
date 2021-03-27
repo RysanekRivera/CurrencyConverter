@@ -24,7 +24,7 @@
             
             <com.google.android.material.card.MaterialCardView
                 style="@style/CardViewStyle.Cut"
-                android:layout_width="150dp"
+                android:layout_width="160dp"
                 android:layout_height="100dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
@@ -47,6 +47,7 @@
                         android:id="@+id/tvFrom"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
                         android:text="@string/from"
                         android:textColor="@color/light_blue"
@@ -59,11 +60,10 @@
                     <Spinner
                         android:id="@+id/spFromCurrency"
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginEnd="8dp"
+                        android:layout_height="0dp"
+                        android:paddingStart="0dp"
+                        android:paddingEnd="15dp"
                         android:entries="@array/currency_codes"
-                        android:padding="15dp"
                         android:popupBackground="@color/light_blue"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -71,8 +71,7 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/tvFrom" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
-            
-            
+                
             </com.google.android.material.card.MaterialCardView>
         
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -83,7 +82,6 @@
         android:id="@+id/cvAmount"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/nice_purple"
         app:cardCornerRadius="10dp"
         app:cardElevation="16dp"
         app:cardPreventCornerOverlap="false"
@@ -93,7 +91,8 @@
         
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_cardview_amount">
             
             <com.google.android.material.card.MaterialCardView
                 style="@style/CardViewStyle.Cut"
@@ -166,7 +165,7 @@
             
             <com.google.android.material.card.MaterialCardView
                 style="@style/CardViewStyle.Cut"
-                android:layout_width="150dp"
+                android:layout_width="160dp"
                 android:layout_height="100dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
@@ -187,6 +186,7 @@
                         android:id="@+id/tvTo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
                         android:text="@string/to"
                         android:textColor="@color/yellow"
@@ -198,12 +198,11 @@
     
                     <Spinner
                         android:id="@+id/spToCurrency"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginEnd="8dp"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:paddingStart="0dp"
+                        android:paddingEnd="15dp"
                         android:entries="@array/currency_codes"
-                        android:padding="15dp"
                         android:popupBackground="@color/yellow"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -229,14 +228,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.06" />
+        app:layout_constraintGuide_percent="0.05" />
     
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.94" />
+        app:layout_constraintGuide_percent="0.95" />
     
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnExchange"
@@ -254,7 +253,6 @@
         android:id="@+id/cvResult"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/orange_red"
         app:cardCornerRadius="10dp"
         app:cardElevation="16dp"
         android:visibility="gone"
@@ -267,7 +265,8 @@
         
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_cardview_result">
             
             <com.google.android.material.card.MaterialCardView
                 style="@style/CardViewStyle.Cut"
@@ -277,7 +276,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="8dp"
-                app:cardElevation="20dp"
+                app:cardElevation="6dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -298,7 +297,7 @@
                         tools:text="15 EUR = 20 USD"
                         android:textColor="@color/orange_red"
                         android:textAlignment="inherit"
-                        android:textSize="35sp"
+                        android:textSize="25sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.5"
@@ -311,6 +310,5 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     
     </com.google.android.material.card.MaterialCardView>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
