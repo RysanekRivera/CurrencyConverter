@@ -7,4 +7,3 @@ Currency conversion using live exchange rates via ExchangeRateApi.io</p>
 <div>
   <img src="https://github.com/RysanekRivera/CurrencyConverter/blob/master/currency_converter.jpg?raw=true"/>
 </div>
-<hr>
